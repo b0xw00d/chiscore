@@ -24,7 +24,7 @@
 # - bullet point or paragraph form are both acceptable
 
 # footer should contain any issue tracking info or actions
-# - e.g. closes #123, #245, #992
+# - e.g. close #123,  close #245, close #992
 
 # For a full example of how to write a good commit message, check out
 # http://karma-runner.github.io/0.8/dev/git-commit-msg.html
