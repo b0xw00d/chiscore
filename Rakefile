@@ -12,13 +12,13 @@ task :project_setup do
   puts "\e[32mSuccess!\e[0m"
 end
 
-desc "run all tests"
+desc "runs all tests"
 task(:spec_all) do
   sh "grunt spec"
   Rake::Task["spec"].invoke
 end
 
-desc "run ruby test suite"
+desc "runs ruby test suite"
 task(:spec) do
   RSpec::Core::RakeTask.new { |t| t.verbose = false }
 end
