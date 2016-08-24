@@ -1,8 +1,7 @@
 chiscore
 ============
 
-Scoring app for Chiditarod 2013 (and possibly beyond)
-
+### Installation
 You need redis.
 
 `brew install redis` and follow those instructions
@@ -18,20 +17,23 @@ then `npm install -g grunt-cli` -- the grunt-cli may require sudo.
 
 Then, from the root `chiscore` directory, `npm install`
 
-## Setup and Server
+### Setup and Server
+Navigate to the  root of the `chiscore` directory:
+    `cd chiscore`
+
 Run configuration tasks:
-    `rake project_setup`
+    `rake project_setup` (from application root)
 
 Start a local server:
     `unicorn` (or `rackup` if you're into that)
 
-Start the Redis server(in a new tab or window):
-    `redis-server`
+Start the Redis server:
+    `redis-server` (in a new tab or window)
 
-Run ruby and js test suites:
-    `rake spec_all`
+Run test suite:
+    `rake spec_all` (runs ruby and js suites)
 
-## Other Stuff
+### Other Stuff
 Run the Ruby spec suite only:
     `rake spec`
 
